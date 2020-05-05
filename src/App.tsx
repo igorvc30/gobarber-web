@@ -1,9 +1,10 @@
 import React from 'react';
 import GlobalSyle from './styles/global';
+import SignIn from './pages/SignIn';
 
 const App: React.FC = () => (
     <>
-        <h1>Go barber web</h1>
+        <SignIn />
         <GlobalSyle />
     </>
 );
