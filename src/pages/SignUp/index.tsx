@@ -10,6 +10,12 @@ import { Container, Content, Background, AnimationContainer } from './styles';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
+interface SignUpFormData {
+    name: string;
+    email: string;
+    password: string;
+}
+
 const SignUp: React.FC = () => {
     const formRef = useRef<FormHandles>(null);
     const handleSubmit = useCallback(async (data: Object) => {
