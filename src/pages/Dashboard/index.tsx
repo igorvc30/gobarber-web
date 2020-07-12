@@ -85,7 +85,7 @@ const Dashboard: React.FC = () => {
             });
             setAppointments(appointmentFormatted);
         });
-    }, [selectedDate]);
+    }, [selectedDate, currentMonth]);
 
     const disabledDays = useMemo(() => {
         const dates = monthAvailability
@@ -129,7 +129,7 @@ const Dashboard: React.FC = () => {
                 <HeaderContent>
                     <img src={logoImg} alt="GoBarber" />
                     <Profile>
-                        <img src={user.avatar_url} />
+                        <img src={user.avatar_url} alt="avatar" />
                         <div>
                             <span>Bem-vindo</span>
                             <Link to="/profile">
